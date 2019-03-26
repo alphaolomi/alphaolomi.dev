@@ -95,6 +95,12 @@ function imageMin(cb) {
     .pipe(dest('dist/img'));
 }
 
+function favicon(cb) {
+    return src('src/favicon/*')
+    // .pipe(image())
+    .pipe(dest('dist/favicon'));
+}
+
 function font(cb) {
   
     return src('src/fonts/*.{eot,ttf,woff}')
@@ -124,8 +130,8 @@ function site_map(cb) {
     .pipe(dest('dist/'));
 }
 
-exports.build = parallel(html, javascript, css,imageMin, font, robot,site_map);
-
+exports.build = parallel(html, javascript, css,imageMin, font,favicon, robot,site_map);
+exports.favicon = favicon;
 
 function clean(cb) {
     // Use the `delete` module directly, instead of using gulp-rimraf
