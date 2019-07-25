@@ -1,14 +1,14 @@
 {
   "name": "alphaolomi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimal personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://olomi@bitbucket.org/olomi/personal-website.git"
+    "url": "git+https://github.com/alphaolomi/alphaolomi.com.git"
   },
   "keywords": [
     "Alpha",
@@ -21,7 +21,7 @@
   ],
   "author": "Alpha Olomi",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/olomi/personal-website#readme",
+  "homepage": "https://alphaolomi.com",
   "devDependencies": {
     "delete": "^1.1.0",
     "gulp": "^4.0.0",
