@@ -86,3 +86,6 @@ typings/
 
 # Distribution files
 dist
+
+# Idea
+.idea/
