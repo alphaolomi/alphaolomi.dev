@@ -31,12 +31,12 @@
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-font": "^1.0.4",
-    "gulp-image": "^4.4.1",
+    "gulp-image": "^5.1.0",
     "gulp-minify-html": "^1.0.6",
     "gulp-rename": "^1.4.0",
     "gulp-robots": "^2.0.4",
     "gulp-seo": "^1.0.2",
-    "gulp-sitemap": "^6.2.0",
+    "gulp-sitemap": "^7.4.0",
     "gulp-srcset": "^2.1.0",
     "gulp-uglify": "^3.0.2"
   }
