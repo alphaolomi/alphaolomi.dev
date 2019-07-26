@@ -24,10 +24,10 @@
   "homepage": "https://alphaolomi.com",
   "devDependencies": {
     "delete": "^1.1.0",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-cache": "^1.1.1",
-    "gulp-clean-css": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cache": "^1.1.2",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-font": "^1.0.4",
@@ -37,7 +37,7 @@
     "gulp-robots": "^2.0.4",
     "gulp-seo": "^1.0.2",
     "gulp-sitemap": "^7.4.0",
-    "gulp-srcset": "^2.1.0",
+    "gulp-srcset": "^2.2.0",
     "gulp-uglify": "^3.0.2"
   }
 }
