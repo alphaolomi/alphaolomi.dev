@@ -77,16 +77,25 @@ function javascript(cb) {
         .pipe(dest('dist/js'));
 }
 
-function css(cb) {
+function indexCss(cb) {
 
     return src('src/css/*.css')
         .pipe(cleanCSS())
         .pipe(concatCss("main.min.css"))
         .pipe(dest('dist/css/'))
 
-
 }
 
+
+function resumeCss(cb) {
+
+    return src('src/css/resume/*.css')
+        .pipe(cleanCSS())
+        .pipe(concatCss("resume.min.css"))
+        .pipe(dest('dist/css/'))
+
+
+}
 function imageMin(cb) {
     return src('src/img/*.+(png|jpg|gif)')
         .pipe(image())
@@ -128,7 +137,7 @@ function site_map(cb) {
         .pipe(dest('dist/'));
 }
 
-exports.build = parallel(html, javascript, css, imageMin, font, favicon, robot, site_map);
+exports.build = parallel(html, javascript, indexCss, resumeCss, imageMin, font, favicon, robot, site_map);
 
 function clean(cb) {
     // Use the `delete` module directly, instead of using gulp-rimraf
