@@ -1,6 +1,7 @@
 # ALpha Olomi // Software Developer
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87e910bd-1c88-4148-bd65-837077b263e4/deploy-status)](https://app.netlify.com/sites/alphaolomi/deploys)
 
 > **Heads up! This is work in progress**
 
