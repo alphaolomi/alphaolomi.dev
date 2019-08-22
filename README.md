@@ -10,8 +10,8 @@ Feel free to yell at me: [hello@alphaolomi.com](hello@alphaolomi.com)
 
 ## Built With
 
-    * [VS Code](https://code.visualstudio.com/)
-    * [Gulp](https://gulpjs.com)
+* [VS Code](https://code.visualstudio.com/)
+* [Gulp](https://gulpjs.com)
 
 ## Install
 
@@ -27,8 +27,8 @@ npm build
 
 ## Contributing
 
-PRs accepted.
+PRs accepted.Open to design/setup ideas.
 
 ## License
 
-MIT © Alpha Olomi
+MIT License
