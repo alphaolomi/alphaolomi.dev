@@ -37,7 +37,7 @@
     "gulp-robots": "2.0.4",
     "gulp-seo": "1.0.2",
     "gulp-sitemap": "7.4.0",
-    "gulp-srcset": "2.2.0",
+    "gulp-srcset": "2.3.1",
     "gulp-uglify": "3.0.2"
   }
 }
