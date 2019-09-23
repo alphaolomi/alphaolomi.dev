@@ -5,7 +5,7 @@
 
 > **Heads up! This is work in progress**
 
-A minimal personal website .Check it out at [http://alphaolomi.com](http://alphaololmi.com)
+A minimal personal website .Check it out at [http://alphaolomi.com](https://alphaololmi.com)
 
 Feel free to yell at me: [hello@alphaolomi.com](hello@alphaolomi.com)
 
@@ -42,4 +42,4 @@ PRs accepted.Open to design/setup ideas.
 
 ## 📃License
 
-MIT License
+License under [Apache License](./LICENSE).
