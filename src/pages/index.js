@@ -1,10 +1,10 @@
 import React from "react"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./index.css"
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="Home" />
     <h1>
       <div className="text">
@@ -118,7 +118,7 @@ const IndexPage = () => (
         .
       </p>
     </div>
-  </Layout>
+  </div>
 )
 
 export default IndexPage
