@@ -5,7 +5,7 @@ import "./index.css"
 
 const IndexPage = () => (
   <div>
-    <SEO title="Home" />
+    <SEO title="Alpha" />
     <h1>
       <div className="text">
         <div className="animate glitch-effect" data-text="Alpha">

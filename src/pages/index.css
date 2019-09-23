@@ -121,8 +121,8 @@ html {
     -moz-osx-font-smoothing: grayscale;    
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent !important;
-    cursor: url(../img/cursor1x.png) 6 6, default;
-    cursor: -webkit-image-set(url(../img/cursor1x.png) 1x, url(../img/cursor2x.png) 2x) 6 6, default;
+    cursor: url(../images/cursor1x.png) 6 6, default;
+    cursor: -webkit-image-set(url(../images/cursor1x.png) 1x, url(../images/cursor2x.png) 2x) 6 6, default;
     padding: 0;
     margin: 0;
     -webkit-user-select: none;
@@ -135,8 +135,8 @@ a,
 a:after,
 a:visited {
     background-color: transparent;
-    cursor: url(../img/cursor-fill1x.png) 6 6, auto;
-    cursor: -webkit-image-set(url(../img/cursor-fill1x.png) 1x, url(../img/cursor-fill2x.png) 2x) 6 6, auto;
+    cursor: url(../images/cursor-fill1x.png) 6 6, auto;
+    cursor: -webkit-image-set(url(../images/cursor-fill1x.png) 1x, url(../images/cursor-fill2x.png) 2x) 6 6, auto;
     text-decoration: none;
     color: #000
 }
