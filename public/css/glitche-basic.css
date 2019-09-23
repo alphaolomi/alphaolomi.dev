@@ -1,0 +1,813 @@
+/* Import Settings */
+/* Setting */
+/* Colors */
+/* Fonts */
+/* Fonts Size */
+/* Letter-Spacing */
+/* Line Height */
+/* Forms */
+/* Params */
+
+/**
+*	 Glitche (HTML)
+*	 Copyright © Glitche by beshleyua. All Rights Reserved.
+**/
+
+/* TABLE OF CONTENTS
+	1. Basic
+	2. Container
+	3. Columns
+	4. Typography
+	5. Links
+	6. Buttons
+	7. Preloader
+	8. Forms
+	9. Lists
+	10. Code
+	11. Tables
+	12. Alignment
+	13. Text Formating
+	14. Blockquote
+	15. Animations
+*/
+.wrap {
+    background-color: #f26b38;
+    color: white;
+    padding: 0 3px;
+    text-transform: capitalize !important;
+}
+
+
+
+/* 1. Basic */
+html {
+    margin-right: 0 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto Mono';
+    font-size: 13px;
+    color: #363636;
+    background: #fff;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+body header,
+body footer,
+body .section {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.loaded header,
+body.loaded footer,
+body.loaded .section {
+    opacity: 1;
+    visibility: visible;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* 2. Container */
+.container {
+    position: relative;
+    margin: 30px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+@media (max-width: 840px) {
+    .container {
+        margin: 15px;
+    }
+
+}
+
+.container .line {
+    content: '';
+    position: fixed;
+    background: #f26b38;
+    z-index: 105;
+}
+
+.container .line.top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+}
+
+@media (max-width: 840px) {
+    .container .line.top {
+        height: 15px;
+    }
+
+}
+
+.container .line.bottom {
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+@media (max-width: 840px) {
+    .container .line.bottom {
+        height: 15px;
+    }
+
+}
+
+.container .line.left {
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 200%;
+}
+
+@media (max-width: 840px) {
+    .container .line.left {
+        width: 15px;
+    }
+
+}
+
+.container .line.right {
+    left: auto;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 200%;
+}
+
+@media (max-width: 840px) {
+    .container .line.right {
+        width: 15px;
+    }
+
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1060px;
+}
+
+/* 3. Columns */
+.cols {
+    position: relative;
+}
+
+.cols .col.col-sm {
+    float: left;
+    width: 25%;
+}
+
+@media (max-width: 840px) {
+    .cols .col.col-sm {
+        width: 100%;
+    }
+
+}
+
+.cols .col.col-lg {
+    float: left;
+    width: 75%;
+}
+
+@media (max-width: 840px) {
+    .cols .col.col-lg {
+        width: 100%;
+    }
+
+}
+
+.cols .col.col-md {
+    float: left;
+    width: 50%;
+}
+
+@media (max-width: 840px) {
+    .cols .col.col-md {
+        width: 100%;
+    }
+
+}
+
+.cols:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 4. Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    font-family: 'Roboto Mono';
+    margin: 0;
+    margin-bottom: 30px;
+    color: #141414;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 23px;
+    padding: 0;
+    margin: 30px 0;
+}
+
+strong {
+    font-weight: 500;
+}
+
+/* 5. Links */
+a {
+    color: #363636;
+    text-decoration: none;
+    opacity: 1;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f26b38;
+}
+
+/* 6. Buttons */
+a.btn,
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    color: #363636;
+    font-size: 13px;
+    background: none;
+    border: 1px solid #dddddd;
+    position: relative;
+    overflow: hidden;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+a.btn.fill,
+.btn.fill {
+    color: #ffffff;
+    background: #f26b38;
+    border: 1px solid #f26b38;
+}
+
+a.btn:hover,
+.btn:hover {
+    color: #ffffff;
+    background: #f26b38;
+    border: 1px solid #f26b38;
+}
+
+/* 7. Preloader */
+.preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.preloader .load {
+    color: #f26b38;
+    font-size: 12px;
+}
+
+.preloader .typed-load,
+.preloader .typed-cursor {
+    color: #f26b38;
+    font-size: 12px;
+}
+
+/* 8. Forms */
+input,
+textarea,
+button {
+    display: block;
+    background: none;
+    font-family: 'Roboto Mono';
+    font-size: 12px;
+    height: 60px;
+    width: 100%;
+    color: #141414;
+    margin-bottom: 30px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    -webkit-appearance: none;
+    resize: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    outline: 0;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    color: #141414;
+    border-bottom: 1px solid #f26b38;
+}
+
+textarea {
+    height: 120px;
+    padding: 0;
+    margin-top: 55px;
+}
+
+button {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+    color: #141414;
+}
+
+button:hover {
+    border-bottom: 1px solid #f26b38;
+}
+
+label,
+legend {
+    display: block;
+    padding-bottom: 10px;
+    font-family: 'Roboto Mono';
+    font-size: 13px;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+}
+
+::-webkit-input-placeholder {
+    color: #999999;
+}
+
+:-moz-placeholder {
+    color: #999999;
+}
+
+::-moz-placeholder {
+    color: #999999;
+}
+
+:-ms-input-placeholder {
+    color: #999999;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: #141414;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: #141414;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: #141414;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: #141414;
+}
+
+input.error,
+textarea.error {
+    border-bottom: 1px solid red !important;
+}
+
+label.error {
+    display: none !important;
+}
+
+input.error::-moz-placeholder,
+textarea.error::-moz-placeholder {
+    color: red;
+}
+
+input.error:-moz-placeholder,
+textarea.error:-moz-placeholder {
+    color: red;
+}
+
+input.error:-ms-input-placeholder,
+textarea.error:-ms-input-placeholder {
+    color: red;
+}
+
+input.error::-webkit-input-placeholder,
+textarea.error::-webkit-input-placeholder {
+    color: red;
+}
+
+/* 9. Lists */
+ol,
+ul {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-bottom: 0px;
+}
+
+li {
+    margin-bottom: 0px;
+}
+
+/* 10. Code */
+code {
+    background: #dddddd;
+    font-size: 16px;
+    font-family: 'Roboto Mono';
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+/* 11. Tables */
+table {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    color: #141414;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+td {
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    padding: 12px 15px;
+    text-align: left;
+    color: #363636;
+}
+
+/* 12. Alignment */
+.align-center {
+    text-align: center !important;
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-none {
+    float: none !important;
+}
+
+.full-width {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.full-max-width {
+    max-width: 100% !important;
+    width: auto !important;
+}
+
+.centrize {
+    display: table !important;
+    table-layout: fixed !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+.vertical-center {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+/* 13. Text Formating */
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.text-regular {
+    font-weight: 400 !important;
+}
+
+.text-bold {
+    font-weight: 700 !important;
+}
+
+.text-italic {
+    font-style: italic !important;
+}
+
+/* 14. Blockquote */
+blockquote {
+    font-family: 'Roboto Mono';
+}
+
+/* Animations */
+/* Glitch Animations */
+@media (min-width: 580px) {
+
+    .glitch-effect,
+    .glitch-effect-white {
+        position: relative;
+    }
+
+    .glitch-effect:before,
+    .glitch-effect:after,
+    .glitch-effect-white:before,
+    .glitch-effect-white:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    .glitch-effect-white:before,
+    .glitch-effect-white:after {
+        background: #f26b38;
+    }
+
+    .glitch-effect:after,
+    .glitch-effect-white:after {
+        left: 2px;
+        text-shadow: -1px 0 #f26b38;
+        animation: glitch-1 2s infinite linear alternate-reverse;
+    }
+
+    .glitch-effect:before,
+    .glitch-effect-white:before {
+        left: -2px;
+        text-shadow: 2px 0 #f26b38;
+        animation: glitch-2 2s infinite linear alternate-reverse;
+    }
+
+}
+
+@keyframes glitch-1 {
+    0% {
+        clip: rect(20px, 920px, 51px, 0);
+    }
+
+    5% {
+        clip: rect(83px, 920px, 102px, 0);
+    }
+
+    10% {
+        clip: rect(83px, 920px, 105px, 0);
+    }
+
+    15% {
+        clip: rect(95px, 920px, 11px, 0);
+    }
+
+    20% {
+        clip: rect(105px, 920px, 56px, 0);
+    }
+
+    25% {
+        clip: rect(40px, 920px, 19px, 0);
+    }
+
+    30% {
+        clip: rect(56px, 920px, 97px, 0);
+    }
+
+    35% {
+        clip: rect(9px, 920px, 17px, 0);
+    }
+
+    40% {
+        clip: rect(103px, 920px, 53px, 0);
+    }
+
+    45% {
+        clip: rect(92px, 920px, 6px, 0);
+    }
+
+    50% {
+        clip: rect(69px, 920px, 46px, 0);
+    }
+
+    55% {
+        clip: rect(8px, 920px, 87px, 0);
+    }
+
+    60% {
+        clip: rect(12px, 920px, 15px, 0);
+    }
+
+    70% {
+        clip: rect(28px, 920px, 106px, 0);
+    }
+
+    80% {
+        clip: rect(98px, 920px, 63px, 0);
+    }
+
+    85% {
+        clip: rect(11px, 920px, 44px, 0);
+    }
+
+    95% {
+        clip: rect(23px, 920px, 84px, 0);
+    }
+
+    100% {
+        clip: rect(66px, 920px, 91px, 0);
+    }
+
+}
+
+@keyframes glitch-2 {
+    0% {
+        clip: rect(86px, 920px, 25px, 0);
+    }
+
+    5% {
+        clip: rect(30px, 920px, 17px, 0);
+    }
+
+    10% {
+        clip: rect(54px, 920px, 43px, 0);
+    }
+
+    15% {
+        clip: rect(10px, 920px, 86px, 0);
+    }
+
+    25% {
+        clip: rect(62px, 920px, 1px, 0);
+    }
+
+    30% {
+        clip: rect(61px, 920px, 24px, 0);
+    }
+
+    35% {
+        clip: rect(38px, 920px, 46px, 0);
+    }
+
+    40% {
+        clip: rect(115px, 920px, 8px, 0);
+    }
+
+    45% {
+        clip: rect(87px, 920px, 44px, 0);
+    }
+
+    50% {
+        clip: rect(6px, 920px, 65px, 0);
+    }
+
+    55% {
+        clip: rect(83px, 920px, 99px, 0);
+    }
+
+    65% {
+        clip: rect(25px, 920px, 71px, 0);
+    }
+
+    70% {
+        clip: rect(37px, 920px, 55px, 0);
+    }
+
+    75% {
+        clip: rect(115px, 920px, 18px, 0);
+    }
+
+    80% {
+        clip: rect(68px, 920px, 46px, 0);
+    }
+
+    90% {
+        clip: rect(47px, 920px, 31px, 0);
+    }
+
+    95% {
+        clip: rect(47px, 920px, 84px, 0);
+    }
+
+    100% {
+        clip: rect(93px, 920px, 53px, 0);
+    }
+
+}
+
+/* Mouse Button Animations */
+@keyframes mouse-anim {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+
+}
