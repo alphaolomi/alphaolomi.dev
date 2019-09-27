@@ -5,8 +5,10 @@ module.exports = {
     author: `@alphaolomi`,
     keywords: ['Alpha Olomi', 'Alpha Elifuraha Olomi', 'personal', 'portfolio', 'experience', 'freelance', 'student', 'engineer', 'software', 'developer'],
     contact: 'hello@alphaolomi.com',
-    image: 'http://alphaolomi.com/img/thumbnail.png',
+    image: 'https://alphaolomi.com/img/thumbnail.png',
     site_name: 'Alpha Olomi // Software Developer',
+    website:'https://alphaolomi.com',
+    lang:'en'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from 'gatsby';
 import SEO from "../components/seo"
 import "./index.css"
 
@@ -23,6 +23,7 @@ const IndexPage = () => (
       <h2>
         Hello World, <br />I am a software developer, and freelancer passioned
         to simplify life with code.
+        <Link to='conrct'/>
       </h2>
 
       <p>
