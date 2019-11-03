@@ -1,4 +1,4 @@
-<h1 align="center">Alpha Olomi<h1>
+<h1 align="center">Alpha Olomi</h1>
 
 <p align="center">
 
@@ -19,6 +19,7 @@
 </a>
 
 </p>
+
 
 A minimal personal website .Check it out at [http://alphaolomi.com](https://alphaololmi.com)
 
