@@ -34,7 +34,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `google-site-verification`,
-          content: `ZETfz4011CkQZtZ24hl0s`,
+          content: `ZETfz4011CkQZtZ24hl0s-0Ci-Zyt9V84Ebr969m2ro`,
         },
         {
           property: `og:title`,
