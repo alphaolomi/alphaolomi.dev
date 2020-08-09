@@ -28,7 +28,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'foodapp.png',
     title: 'FoodApp',
     info: 'Discover the best on-demand food delivery service apps that you must try today to get access to hundreds of amazing local restaurants foods and cuisines.',
     info2: 'Find Food Options For Your Budget. Hungry?',
