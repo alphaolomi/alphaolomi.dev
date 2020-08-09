@@ -1,5 +1,19 @@
 import { nanoid } from 'nanoid';
 
+
+export const siteMetadata =  {
+  title: `Alpha Olomi // Software Developer`,
+  description: `Alpha Olomi is a Software Developer with over 3 years of experiences in a wide range of disciplines. Constantly in back-end development, learning and experiencing new things.`,
+  author: `@alphaolomi`,
+  keywords: ['Alpha Olomi', 'Alpha Elifuraha Olomi', 'personal', 'portfolio', 'experience', 'freelance', 'student', 'engineer', 'software', 'developer'],
+  contact: 'hello@alphaolomi.com',
+  image: 'https://alphaolomi.com/img/thumbnail.png',
+  site_name: 'Alpha Olomi // Software Developer',
+  website:'https://alphaolomi.com',
+  lang:'en'
+};
+
+
 // HEAD DATA
 export const headData = {
   title: 'Alpha Olomi // Software Developwe', // e.g: 'Name | Developer'
