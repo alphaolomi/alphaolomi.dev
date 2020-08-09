@@ -36,6 +36,7 @@
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.16",
+    "react-text-loop": "^2.3.0",
     "react-tilt": "^0.1.4"
   },
   "devDependencies": {
@@ -52,5 +53,4 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5"
   }
- 
 }

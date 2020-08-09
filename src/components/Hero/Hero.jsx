@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
+import TextLoop from "react-text-loop";
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
@@ -28,8 +29,13 @@ const Header = () => {
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Your Name'}</span>
-            <br />
-            {subtitle || "I'm the Unknown Developer."}
+            <br />          
+            I'm the {" "}
+            <TextLoop>
+              <span>{"Unknown Developer."}</span>                  
+              <span>{"Missing Developer."}</span>
+              <span>{"Unicorn Developer."}</span>
+                </TextLoop>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
