@@ -1,8 +1,70 @@
 html {
   font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: url(../images/cursors/cursor1x.png) 6 6, default;
+  cursor: -webkit-image-set(url(../images/cursors/cursor1x.png) 1x, url(../images/cursors/cursor2x.png) 2x) 6 6, default;
+}
+
+// 
+// 
+// Scroll bar
+// 
+// 
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  position: absolute
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #000;
+  -webkit-box-shadow: inset 0 0 0 transparent
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #000
+}
+
+::selection {
+  background: #000;
+  color: #fff
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff
+}
+
+//-----------------------------------------------------------
+
+a,
+a:after,
+a:visited {
+    background-color: transparent;
+    cursor: url(../images/cursors/cursor-fill1x.png) 6 6, auto;
+    cursor: -webkit-image-set(url(../images/cursors/cursor-fill1x.png) 1x, url(../images/cursors/cursor-fill2x.png) 2x) 6 6, auto;
+    text-decoration: none;
+    color: #000
 }
