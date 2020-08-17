@@ -16,7 +16,7 @@ export const siteMetadata =  {
 
 // HEAD DATA
 export const headData = {
-  title: 'Alpha Olomi // Software Developwe', // e.g: 'Name | Developer'
+  title: 'Alpha Olomi // Software Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: 'Alpha Olomi is a software developer with over 4 years of experiences in a wide range of disciplines. Constantly in back-end development, learning and experiencing new things.', // e.g: Welcome to my website
 };
