@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { siteMetadata, headData } from '../mock/data';
 
-export default () => {
+const IndexPage = () => {
   const { title, lang, description } = headData;
   return (
     <>
@@ -56,3 +56,4 @@ export default () => {
     </>
   );
 };
+export default IndexPage;

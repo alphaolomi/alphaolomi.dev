@@ -33,8 +33,7 @@ const Header = () => {
             <br />
             I&apos;m the{' '}
             <TextLoop>
-              <span>Unknown Developer.</span>
-              <span>Missing Developer.</span>
+              <span>Software Engineer.</span>
               <span>Unicorn Developer.</span>
             </TextLoop>
           </h1>
