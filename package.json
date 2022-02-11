@@ -26,7 +26,7 @@
     "gatsby-plugin-sharp": "^2.6.25",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-sharp": "^2.5.12",
-    "nanoid": "^3.1.12",
+    "nanoid": "^3.1.31",
     "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
