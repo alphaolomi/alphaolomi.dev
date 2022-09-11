@@ -1,9 +1,11 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-import { Container } from '@/components/Container'
-import { formatDate } from '@/lib/formatDate'
-import { Prose } from '@/components/Prose'
+import { ArticleJsonLd, NextSeo } from 'next-seo';
+
+import { Container } from '@/components/Container';
+import { formatDate } from '@/lib/formatDate';
+import { Prose } from '@/components/Prose';
 
 function ArrowLeftIcon(props) {
   return (
@@ -15,26 +17,47 @@ function ArrowLeftIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
-export function ArticleLayout({
-  children,
-  meta,
-  isRssFeed = false,
-  previousPathname,
-}) {
-  let router = useRouter()
+export function ArticleLayout({ children, meta, isRssFeed = false, previousPathname }) {
+  let router = useRouter();
 
   if (isRssFeed) {
-    return children
+    return children;
   }
 
   return (
     <>
       <Head>
-        <title>{`${meta.title} - Spencer Sharp`}</title>
-        <meta name="description" content={meta.description} />
+        <title>{`${meta.title} - Alpha Olomi`}</title>
+        <NextSeo
+          openGraph={{
+            title: meta.title,
+            description: meta.description,
+            url: `https://alphaolomi.com/articles/${router.asPath}`,
+            type: 'article',
+            article: {
+              publishedTime: formatDate(meta.date),
+              authors: ['https://alphaolomi.com/about'],
+              tags: meta.tags,
+            },
+          }}
+        />
+        <ArticleJsonLd
+          url={`https://alphaolomi.com/articles/${router.asPath}`}
+          title={meta.title}
+          images={[]}
+          datePublished={formatDate(meta.date)}
+          authorName={[
+            {
+              name: 'Alpha Olomi',
+              url: 'https://alphaolomi.com/about',
+            },
+          ]}
+          publisherName="Alpha Olomi"
+          description="A blog about web development and programming."
+        />
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
@@ -68,5 +91,5 @@ export function ArticleLayout({
         </div>
       </Container>
     </>
-  )
+  );
 }
