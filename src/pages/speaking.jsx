@@ -42,13 +42,12 @@ export default function Speaking() {
         <div className="space-y-20">
           <SpeakingSection title="Workshops">
             <Appearance
-              href="#"
-              title="Openpesa - Introduction Workshop"
-              description="A technical deep-dive into Openpesa, a payments intergation toolkit I wrote for helping intergrating payments ."
-              event="Openpesa"
+              href="https://www.youtube.com/watch?v=AmtiNCFv0jM"
+              title="Openpesa - Mpesa Intergation"
+              description="A technical deep-dive into Openpesa Mpesa TZ Intergration, a payments intergation toolkit I wrote for helping intergrating payments ."
+              event="Openpesa + Yesaya Software"
               cta="Watch video"
             />
-            
           </SpeakingSection>
          
         </div>
