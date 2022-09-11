@@ -1,4 +1,9 @@
 // TODO: add logos for each company
+
+import Image from "next/future/image"
+import { Button } from "./Button"
+import { ArrowDownIcon, BriefcaseIcon } from "./Icons"
+
 // TODO: add Resume link
 export default function Resume() {
     let resume = [

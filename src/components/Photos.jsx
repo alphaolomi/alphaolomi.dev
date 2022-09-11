@@ -1,10 +1,13 @@
+// import clsx from "clsx"
+// import Image from "next/future/image"
+
 export default function Photos() {
-    let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+    // let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
   
     return (
       <div className="mt-16 sm:mt-20">
         <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-          {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+          {/* {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
             <div
               key={image.src}
               className={clsx(
@@ -19,7 +22,7 @@ export default function Photos() {
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     )
