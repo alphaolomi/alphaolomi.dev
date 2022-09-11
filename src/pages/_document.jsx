@@ -33,14 +33,35 @@ const modeScript = `
   function updateModeWithoutTransitions() {
     disableTransitionsTemporarily()
     updateMode()
-  }
+  }  
 `;
 
+const swStop = `
+if (window.navigator && navigator.serviceWorker) {
+  navigator.serviceWorker
+    .getRegistrations()
+    .then(function (registrations) {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    })
+    .catch(function (err) {
+      console.log("ServiceWorker registration failed: ", err);
+    })
+    .finally(() => {
+      window.location.reload();
+    });
+} else {
+  console.log("No service worker found");
+}
+
+`;
 export default function Document() {
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
+        <script dangerouslySetInnerHTML={{ __html: swStop }} />
         <link
           rel="alternate"
           type="application/rss+xml"
