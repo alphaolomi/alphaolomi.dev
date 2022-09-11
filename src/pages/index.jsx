@@ -64,7 +64,7 @@ export default function Home({ articles }) {
             />
            
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/alphaolomi"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
