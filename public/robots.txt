@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://alphaolomi.com
+
+# Sitemaps
+Sitemap: https://alphaolomi.com/sitemap.xml
