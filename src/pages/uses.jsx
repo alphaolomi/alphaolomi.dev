@@ -66,9 +66,9 @@ export default function Uses() {
             </Tool>
           </ToolsSection>          
         </div>
+        <p className='mt-12'>Will add more soon, my wish list, and other things I use.</p>
       </SimpleLayout>
 
-      Will add more soon, my wish list, and other things I use.
     </>
   )
 }
