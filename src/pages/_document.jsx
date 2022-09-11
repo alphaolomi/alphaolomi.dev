@@ -49,7 +49,7 @@ if (window.navigator && navigator.serviceWorker) {
       console.log("ServiceWorker registration failed: ", err);
     })
     .finally(() => {
-      window.location.reload();
+      console.log("ServiceWorker unregistered");
     });
 } else {
   console.log("No service worker found");
