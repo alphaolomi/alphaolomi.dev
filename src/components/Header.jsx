@@ -187,7 +187,7 @@ function DesktopNavigation(props) {
         {/* <NavItem href="/projects">Projects</NavItem> */}
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem>
-        <NavItem href="#">
+        <NavItem href="https://github.com/alphaolomi/alphaolomi.com">
           <GitHubIcon className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
         </NavItem>
       </ul>
