@@ -1,4 +1,4 @@
-# [Alpha's Personal website](alphaolomi.com)
+# [Alpha's Personal website](alphaolomi.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/833d73f7-915c-4086-a0af-31720ab88f8b/deploy-status)](https://app.netlify.com/sites/alphaolomi/deploys)
 
 Built using [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com). 
 
