@@ -11,7 +11,6 @@ export async function generateRssFeed() {
     name: 'Alpha Olomi',
     email: 'hello@alphaolomi.com',
   }
-
   let feed = new Feed({
     title: author.name,
     description: 'The personal blog of Alpha Olomi',

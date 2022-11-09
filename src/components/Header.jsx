@@ -1,4 +1,4 @@
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
@@ -37,8 +37,6 @@ function GitHubIcon(props){
     </svg>
   );
 }
-
-
 
 function ChevronDownIcon(props) {
   return (
@@ -140,7 +138,7 @@ function MobileNavigation(props) {
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/articles">Articles</MobileNavItem>
-                {/* <MobileNavItem href="/projects">Projects</MobileNavItem> */}
+                <MobileNavItem href="/opensource">Opensource</MobileNavItem>
                 <MobileNavItem href="/speaking">Speaking</MobileNavItem>
                 <MobileNavItem href="/uses">Uses</MobileNavItem>
                 <MobileNavItem href="https://github.com/alphaolomi/alphaolomi.com">
@@ -184,7 +182,7 @@ function DesktopNavigation(props) {
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/about">About</NavItem>
         <NavItem href="/articles">Articles</NavItem>
-        {/* <NavItem href="/projects">Projects</NavItem> */}
+        <NavItem href="/opensource">Opensource</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem>
         <NavItem href="https://github.com/alphaolomi/alphaolomi.com">
@@ -259,7 +257,7 @@ function Avatar({ large = false, className, ...props }) {
       <Image
         src={avatarImage}
         alt=""
-        sizes={large ? '6rem' : '3.25rem'}
+        sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
           large ? 'h-16 w-16' : 'h-9 w-9'
@@ -283,6 +281,10 @@ export function Header() {
 
     function setProperty(property, value) {
       document.documentElement.style.setProperty(property, value)
+    }
+
+    function removeProperty(property) {
+      document.documentElement.style.removeProperty(property)
     }
 
     function updateHeaderStyles() {
@@ -309,6 +311,16 @@ export function Header() {
       } else if (top === 0) {
         setProperty('--header-height', `${scrollY + height}px`)
         setProperty('--header-mb', `${-scrollY}px`)
+      }
+
+      if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
+        setProperty('--header-inner-position', 'fixed')
+        removeProperty('--header-top')
+        removeProperty('--avatar-top')
+      } else {
+        removeProperty('--header-inner-position')
+        setProperty('--header-top', '0px')
+        setProperty('--avatar-top', '0px')
       }
     }
 
@@ -362,7 +374,7 @@ export function Header() {
   return (
     <>
       <header
-        className="flex flex-col"
+        className="pointer-events-none relative z-50 flex flex-col"
         style={{
           height: 'var(--header-height)',
           marginBottom: 'var(--header-mb)',
@@ -375,32 +387,40 @@ export function Header() {
               className="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"
             />
             <Container
-              className="pointer-events-none top-0 z-50 order-last -mb-3 pt-3"
+              className="top-0 order-last -mb-3 pt-3"
               style={{ position: 'var(--header-position)' }}
             >
-              <div className="relative">
-                <AvatarContainer
-                  className="absolute left-0 top-3 origin-left transition-opacity"
-                  style={{
-                    opacity: 'var(--avatar-border-opacity, 0)',
-                    transform: 'var(--avatar-border-transform)',
-                  }}
-                />
-                <Avatar
-                  large
-                  className="block h-16 w-16 origin-left"
-                  style={{ transform: 'var(--avatar-image-transform)' }}
-                />
+              <div
+                className="top-[var(--avatar-top,theme(spacing.3))] w-full"
+                style={{ position: 'var(--header-inner-position)' }}
+              >
+                <div className="relative">
+                  <AvatarContainer
+                    className="absolute left-0 top-3 origin-left transition-opacity"
+                    style={{
+                      opacity: 'var(--avatar-border-opacity, 0)',
+                      transform: 'var(--avatar-border-transform)',
+                    }}
+                  />
+                  <Avatar
+                    large
+                    className="block h-16 w-16 origin-left"
+                    style={{ transform: 'var(--avatar-image-transform)' }}
+                  />
+                </div>
               </div>
             </Container>
           </>
         )}
         <div
           ref={headerRef}
-          className="pointer-events-none top-0 z-50 pt-6"
+          className="top-0 z-10 h-16 pt-6"
           style={{ position: 'var(--header-position)' }}
         >
-          <Container>
+          <Container
+            className="top-[var(--header-top,theme(spacing.6))] w-full"
+            style={{ position: 'var(--header-inner-position)' }}
+          >
             <div className="relative flex gap-4">
               <div className="flex flex-1">
                 {!isHomePage && (

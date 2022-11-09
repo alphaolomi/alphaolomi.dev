@@ -7,11 +7,7 @@ const nextConfig = {
   pageExtensions: ['jsx', 'mdx'],
   reactStrictMode: true,
   experimental: {
-    newNextLinkBehavior: true,
     scrollRestoration: true,
-    // images: {
-    //   allowFutureImage: true,
-    // },
   },
 }
 
