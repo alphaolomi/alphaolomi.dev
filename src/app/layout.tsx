@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import { GoogleAnalytics } from '@next/third-parties'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
@@ -34,7 +34,7 @@ export default function RootLayout({
             <Layout>{children}</Layout>
           </div>
         </Providers>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? ''} />
       </body>
     </html>
   )
