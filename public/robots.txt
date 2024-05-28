@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://alphaolomi.com
+Host: https://alphaplomi.dev
 
 # Sitemaps
-Sitemap: https://alphaolomi.com/sitemap.xml
+Sitemap: https://alphaplomi.dev/sitemap.xml
