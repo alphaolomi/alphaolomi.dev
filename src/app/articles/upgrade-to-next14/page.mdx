@@ -1,0 +1,47 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Alpha Olomi',
+  date: '2024-05-28',
+  title: 'Website upgrade to Next 14 🎊',
+  tags: ['blog', 'website'],
+  description:
+    'I am excited to present you *upgraded website* 🎊! The website site has be migrated from Next 12 to Next 14',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+
+👋 Hello there,
+
+I am excited to present you the *upgraded website* 🎊!
+
+This website site has be migrated from Next 12 with page router to [Next.js](https://nextjs.org/) 14 with app router, Next is a framework that is built on top of React. "The React Framework
+for Production". Next.js brings all the features you need for production such as hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
+
+
+So, what's new exactly?
+
+## What's new?
+
+Here's a good overview of the most visible improvements:
+
+- **App Router** - The new App Router. It's allow for co-location.
+- **React Server components** - The new website is built with RSC. This means that you can now stream content.
+- **Added pages** - The new website has more pages, including a [guestbook](https://alphaplomi.dev/uses) page.
+- and more...
+
+## Credits
+
+Thanks to the new TailwindUI themes that I used as a base to build the new website.
+
+Please report any problem by opening a new [issue](https://github.com/alphaolomi/alphaolomi.com/issues)
+
+---
+
+Thank you for taking you time to read this post. I hope you enjoyed it. If you have any questions, feel free to reach out to me on [Twitter](https://twitter.com/alphaolomi) or [LinkedIn](https://www.linkedin.com/in/alphaolomi/). Stay tuned for more updates.
