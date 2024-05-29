@@ -7,10 +7,21 @@ import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoAlphaOlomiDotDev from '@/images/logos/logo-alpha-olomi-dot-dev.svg'
 import logoOpenpesa from '@/images/logos/openpesa.png'
 
-const projects = [
+
+
+interface Link { href: string, label: string }
+
+interface Project {
+  name: string
+  description: string
+  link: Link
+  logo : any
+}
+
+const projects: Project[] = [
   {
     name: 'Openpesa',
     description:
@@ -18,6 +29,12 @@ const projects = [
     link: { href: 'http://openpesa.org', label: 'openpesa.org' },
     logo: logoOpenpesa,
   },
+  {
+    name: 'Alphaolomi.dev',
+    description: 'An open source portfolio website with extras.',
+    link: {href:'https://github.com/alphaolomi/alphaolomi.dev', label:'AlphaOlomi Dot Dev'},
+    logo: logoAlphaOlomiDotDev
+  }
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
