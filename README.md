@@ -4,30 +4,79 @@
 To get started with this template, first install the npm dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
 
-```
+```ini
 NEXT_PUBLIC_SITE_URL=https://example.com
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXX
 ```
 
 Next, run the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-## Customizing
+---
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+For, production build:
+
+
+```bash
+pnpm run dev
+```
+
+Or
+
+
+```bash
+ANALYZE=true pnpm run build
+```
+
+This will automatically open tabs for 
+
+```
+/project/path/.next/analyze/nodejs.html
+/project/path/.next/analyze/edge.html
+/project-path/.next/analyze/client.html
+```
+
+## Testing
+
+Currently not priority. 
+
+### Thoughts/Vision
+
+#### Unit Tests
+
+
+Use Vitest with JSDOM and React Testing Library
+
+- Start testing key files/components.
+- Test each file in `src/`
+- 80% Code coverage.
+
+#### End 2 end Tests
+
+Use Playwright.
+
+Testing Strategy:
+- Simple, testing page essentials only, (load ok, title, LCPs, key items)
+- Test pages incrementally
 
 ## License
 
 This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+
+
+## Credits
+
+![Credits - Avatars Images](https://4.vercel.app/github/contributors/alphaolomi/alphaolomi.dev?strokeopacity=1)
 
 ## Learn more
 
