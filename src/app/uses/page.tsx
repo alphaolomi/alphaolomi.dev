@@ -47,12 +47,19 @@ export default function Uses() {
     >
       <div className="space-y-20">
       <ToolsSection title="Workstation">
-            <Tool title="13' MacBook Pro, i5, 8GB RAM (2017)">
+        <Tool title="HP Victus Gaming PC, i7 7th Gen, 32GB RAM, 1TB SSD">
+            Prior, I used a Macbook Pro '17 , Added Victus to the mix 
+            </Tool>
+            <Tool title="HP 27F FHD (2018)">
+            I didn't want to dual boot OS's  thus added another PC to facilitate Linux distros.
+            </Tool>
+        
+        <Tool title="13' MacBook Pro, i5, 8GB RAM (2017)">
             Prior, I used a Dell Inspiron 7000 with Manjaro Distro, the main difference is the MacOS convenience              
             </Tool>
             <Tool title="HP 27F FHD (2018)">
-              I use one monitor for now, but I’m planning on getting a second one.
-             
+              I use one monitor for now, but I’m planning on getting a second one. <br/>
+               Due to heavy usage it died, motherboard fried, moed to next.
             </Tool>
            
           </ToolsSection>
