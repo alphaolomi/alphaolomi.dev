@@ -1,4 +1,5 @@
 # [Alpha's Personal website](alphaolomi.dev)
+
 ## Getting started
 
 To get started with this template, first install the npm dependencies:
@@ -26,19 +27,17 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 For, production build:
 
-
 ```bash
 pnpm run dev
 ```
 
 Or
 
-
 ```bash
 ANALYZE=true pnpm run build
 ```
 
-This will automatically open tabs for 
+This will automatically open tabs for
 
 ```
 /project/path/.next/analyze/nodejs.html
@@ -48,12 +47,11 @@ This will automatically open tabs for
 
 ## Testing
 
-Currently not priority. 
+Currently not priority.
 
 ### Thoughts/Vision
 
 #### Unit Tests
-
 
 Use Vitest with JSDOM and React Testing Library
 
@@ -66,13 +64,13 @@ Use Vitest with JSDOM and React Testing Library
 Use Playwright.
 
 Testing Strategy:
+
 - Simple, testing page essentials only, (load ok, title, LCPs, key items)
 - Test pages incrementally
 
 ## License
 
 This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
 
 ## Credits
 
